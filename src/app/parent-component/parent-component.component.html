@@ -1,0 +1,6 @@
+<app-child-component [items]="items">
+  <ng-template let-item="item">
+    <p>brand: {{ item.brand }}, product_id: {{ item.product_id }}, product_name: {{ item.product_name }};</p>
+  </ng-template>
+</app-child-component>
+<p>Items count: {{ getItemsCount() }}</p>
